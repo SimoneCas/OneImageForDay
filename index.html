@@ -205,7 +205,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Developed by Simone Casamassa</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -229,14 +229,24 @@
         pause:"false"
     })
     $('.carousel').carousel({
-        interval: 6000 //changes the speed
+        interval: 8000 //changes the speed
     })
 
     function downloadImage(){
-        var children = document.getElementsByClassName("item active").children.length;
+        var children = document.getElementsByClassName("item active")[0].children[0];
         console.log("size"+children);
-        var pathImage = children[1].style.backgroundImage;
+        var pathImage = children.style.backgroundImage;
+        
+        pathImage = pathImage.substring(5);
+        var urlLenght = pathImage.length;
+        console.log("size"+urlLenght);
+        pathImage = pathImage.substring(0,urlLenght-2);
         console.log("immagine: "+pathImage);
+
+        var link = document.createElement('a');
+        link.download = pathImage;
+        link.href = pathImage;
+        link.click();
     }
     </script>
 
