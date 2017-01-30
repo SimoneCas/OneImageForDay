@@ -1,3 +1,26 @@
+/*
+function checkUrl(id, urlInput){	
+console.log("url :"+urlInput);
+var returnValue;
+return $.ajax({
+  type: "GET",
+  url: urlInput,
+  success: function(msg){
+  		console.log("url ok");
+  		document.getElementById(id).style.backgroundImage="url('"+urlInput+"')";
+    
+  },
+  error: function(XMLHttpRequest, textStatus, errorThrown) {
+  		console.log("url ko");
+		document.getElementById(id).style.backgroundImage="url('image/defaultImage.jpg')";
+  }
+  
+});
+	
+	return returnValue;
+} */
+
+
 function loadImage(){
 
 var images = ["http://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg", 
@@ -747,46 +770,61 @@ document.getElementById('image-1').style.backgroundImage="url('"+images[day-1]+"
 document.getElementById('day-image-1').textContent = dat[day-1];	
 
 document.getElementById('image-2').style.backgroundImage="url('"+images[day-2]+"')";	
+//document.getElementById('image-bckg-2').src=images[day-2];	
 document.getElementById('day-image-2').textContent = dat[day-2];
 
 document.getElementById('image-3').style.backgroundImage="url('"+images[day-3]+"')";	
+//document.getElementById('image-bckg-3').src=images[day-3];	
 document.getElementById('day-image-3').textContent = dat[day-3];
 
 document.getElementById('image-4').style.backgroundImage="url('"+images[day-4]+"')";	
+//document.getElementById('image-bckg-4').src=images[day-4];
 document.getElementById('day-image-4').textContent = dat[day-4];
 
 document.getElementById('image-5').style.backgroundImage="url('"+images[day-5]+"')";	
+//document.getElementById('image-bckg-5').src=images[day-5];
 document.getElementById('day-image-5').textContent = dat[day-5];
 
 document.getElementById('image-6').style.backgroundImage="url('"+images[day-6]+"')";	
+//document.getElementById('image-bckg-6').src=images[day-6];
 document.getElementById('day-image-6').textContent = dat[day-6];
 
 document.getElementById('image-7').style.backgroundImage="url('"+images[day-7]+"')";	
+//document.getElementById('image-bckg-7').src=images[day-7];
 document.getElementById('day-image-7').textContent = dat[day-7];
 
 document.getElementById('image-8').style.backgroundImage="url('"+images[day-8]+"')";	
+//document.getElementById('image-bckg-8').src=images[day-8];
 document.getElementById('day-image-8').textContent = dat[day-8];
 
 document.getElementById('image-9').style.backgroundImage="url('"+images[day-9]+"')";	
+//document.getElementById('image-bckg-9').src=images[day-9];
 document.getElementById('day-image-9').textContent = dat[day-9];
 
 document.getElementById('image-10').style.backgroundImage="url('"+images[day-10]+"')";	
+//document.getElementById('image-bckg-10').src=images[day-10];
 document.getElementById('day-image-10').textContent = dat[day-10];
 
 document.getElementById('image-11').style.backgroundImage="url('"+images[day-11]+"')";	
+//document.getElementById('image-bckg-11').src=images[day-11];
 document.getElementById('day-image-11').textContent = dat[day-11];
 
 document.getElementById('image-12').style.backgroundImage="url('"+images[day-12]+"')";	
+//document.getElementById('image-bckg-12').src=images[day-12];
 document.getElementById('day-image-12').textContent = dat[day-12];
 
 document.getElementById('image-13').style.backgroundImage="url('"+images[day-13]+"')";	
+//document.getElementById('image-bckg-13').src=images[day-13];
 document.getElementById('day-image-13').textContent = dat[day-13];
 
 document.getElementById('image-14').style.backgroundImage="url('"+images[day-14]+"')";	
+//document.getElementById('image-bckg-14').src=images[day-14];
 document.getElementById('day-image-14').textContent = dat[day-14];
 
 document.getElementById('image-15').style.backgroundImage="url('"+images[day-15]+"')";	
+//document.getElementById('image-bckg-15').src=images[day-15];
 document.getElementById('day-image-15').textContent = dat[day-15];
+
 }
 
 loadImage();
