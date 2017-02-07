@@ -1,0 +1,123 @@
+#row_content { 
+    color: #ffffff;
+    margin-bottom:0%;
+    text-align:center;
+   padding-top: 3%;
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-bottom: 0%;
+}
+
+#row_about{ 
+    color: #ffffff;
+    margin-bottom:6%;
+    margin-top:20px;
+    display: none;
+    font-size:12pt;
+}
+
+#hr_about {
+   display:none;
+}
+
+#navbar_custom { 
+    color: #ffffff;
+}
+
+#navbar_custom:hover { 
+    color: grey;
+}
+
+#logo_central_content {
+   width:100%;
+   margin-top:5%
+}
+
+#logo_header {
+   width:58%;
+   margin-top:4%
+}
+
+/* nice bootstrap ready facebook share button http://justincron.com */
+
+.btn-facebook {
+	color: #fff;
+	background-color: #4C67A1;
+}
+.btn-facebook:hover {
+	color: #fff;
+	background-color: #405D9B;
+}
+.btn-facebook:focus {
+	color: #fff;
+}
+
+#share_fb_logo {
+   width:35%;
+   margin: 0px;
+}
+#a_fb_share {
+   padding-bottom: 0px;
+}
+
+#cover {
+   position: fixed; 
+   text-align:center;
+   padding-top:20%;
+   height: 100%; 
+   width: 100%; 
+   top:0; 
+   left: 0; 
+   background: #000; 
+   z-index:9999;
+}
+
+.loader {
+    border: 16px solid grey; /* Light grey */
+    border-top: 16px solid white; /* white */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#cover_content {
+   display: table;
+   margin: 0 auto;
+   width: 60px;
+   height: 60px;
+   margin-top:35px
+}
+
+#loader_background_images {
+      display:none;
+}
+
+.carousel-indicators {
+   display:none;
+}
+
+.carousel-caption {
+       bottom: 1px;
+       padding-bottom: 2px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+marquee {
+   color:white;
+   background-color;black;
+   font-size:18pt;
+   font-weight:bold; 
+   margin-left:25%;
+   margin-right:25%;
+}
