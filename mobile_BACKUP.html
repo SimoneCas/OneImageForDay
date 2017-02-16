@@ -6,19 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The One Image For Day is a web site that share one different image every day. You can
-    Downlaod every day 15 different free images.">
+    <meta name="description" content="One new image every day">
     <meta name="author" content="Simone Casamassa">
-    
+
     <meta property="og:title" content="One Image For Day"/>
     <meta property="og:type" content="image"/>
     <meta property="og:url" content="http://www.oneimageforday.com"/>
-    <meta property="og:image" content="http://www.oneimageforday.com/image/OneImageLogo.jpg"/>
+    <meta property="og:image" content="http://www.oneimageforday.com/image/OneImageLogo.png"/>
     <meta property="og:oneimageforday" content="IMDb"/>
-    <meta property="fb:admins" content="simone.casamassa"/>
+    <meta property="fb:admins" content="USER_ID"/>
     <meta property="og:description"
           content="The One Image For Day is a web site that share one different image every day."/>
-
 
     <title>One Image For Day</title>
 
@@ -29,7 +27,7 @@
     <link href="css/full-slider.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/m_style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,19 +35,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    </style>
-		  <script type="text/javascript" src="js/redirect_mobile.js">
-    </script>
+    
 </head>
 
 <body  style="background-color:#000000 ">
     <!-- Load page -->
     
     <div id="cover">
-      <img src="image/ONE-IMAGE.png" title="OneImageForDay_logo_cover" alt="OneImageForDay_logo_cover">
-      <div id="cover_content">
-        <p class="loader"></p>
-      </div>
+      <img src="image/ONE-IMAGE.png" style="width:75%">
+      <br>
+      <br>
+      <marquee>..........</marquee>
     </div>
     
     
@@ -58,25 +54,9 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" id="navbar_custom" href="#">
-              <img id="logo_header" src="image/ONE-IMAGE.png" title="OneImageForDay_logo" alt="OneImageForDay_logo" />
+              <img id="logo_header" src="image/ONE-IMAGE.png" />
             </a>
           </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li style="text-align:right"><a href="#" id="navbar_custom" onclick="downloadImage()"><span class="glyphicon glyphicon-download-alt"></span>  Download Image</a></li>
-
-            
-            <li style="text-align:right">
-            <!--
-            <a id="navbar_custom" href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.oneimageforday.com&p[images][1]=http://www.simonecasamassa.it/img/mainImage.jpg&p[title]=OneImageForDay%20sslazio&p[summary]=One%20Image%20For%20Day!" target="_blank" > <i class="fa fa-facebook fa-2"></i> 
-            -->
-            <a id="navbar_custom" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.oneimageforday.com" target="_blank" > <i class="fa fa-facebook fa-2"></i> 
-            Share Site on Facebook
-            </a>
-            </li>
-            
-                      
-            <li style="text-align:right"><a id="navbar_custom" href="#row_about" onclick="about()" >About</a></li>
-          </ul>
         </div>
         <!-- /.container -->
     </nav>
@@ -106,105 +86,105 @@
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner" id="container-images">
-            <div class="item active" id="item_1">
+            <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" id="image-1" ></div>
                 <div class="carousel-caption">
-                    <h2 id="day-image-1">20/01/2017</h2>
+                    <h2 id="day-image-1" class="date_image">20/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_2">
+            <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" id="image-2" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-2">19/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_3">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-3" ></div>
-                <div class="carousel-caption" >
+                <div class="carousel-caption">
                     <h2 id="day-image-3">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_4">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-4" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-4">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_5">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-5" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-5">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_6">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-6" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-6">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_7">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-7" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-7">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_8">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-8" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-8">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_9">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-9" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-9">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_10">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-10" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-10">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_11">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-11" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-11">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_12">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-12" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-12">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_13">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-13" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-13">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_14">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-14" ></div>
                 <div class="carousel-caption">
                     <h2 id="day-image-14">18/01/2017</h2>
                 </div>
             </div>
-            <div class="item" d="item_15">
+            <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" id="image-15" ></div>
                 <div class="carousel-caption">
@@ -226,39 +206,45 @@
     <!-- Page Content -->
     <div class="container-fluid" >
 
-        <div class="row" id="row_content"> 
-            <div class="col-lg-4"  >
-              
-            </div>
-            <div class="col-lg-4" >       
-                <img id="logo_central_content" src="image/ONE-IMAGE.png" title="OneImageForDay_logo_bottom" alt="OneImageForDay_logo_bottom"/>
-            </div>
-            <div class="col-lg-4" >
-                
-            </div>
+       <div class="row" id="row_content"> 
+            <button type="button" class="btn btn-default btn-block" id="button_style" onClick="downloadImage()"><B>DOWNLOAD</B></button> 
        </div>
-       <hr>
+    
+       <div class="row" id="row_content"> 
+            
+            <a id="link_facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.oneimageforday.com&p[images][0]=&p[title]=OneImageForDay%20sslazio&p[summary]=One%20Image%20For%20Day!" target="_blank" ><!--onclick="shareOnFacebook()" --> <i class="fa fa-facebook fa-2"></i> 
+               <button type="button" class="btn btn-default btn-block" id="button_style"><B>SHARE SITE ON FACEBOOK</B></button> 
+            </a>
+            
+       </div>
+
+       <div class="row" id="row_content"> 
+            
+            <button type="button" class="btn btn-default btn-block" id="button_style" onClick="about()">
+
+            <B>ABOUT</B>
+
+            </button> 
+            
+       </div>
+       <p id="debug"></p>
        <div class="row" id="row_about"> 
-            <div class="col-lg-2"  >
-              
-            </div>
-            <div class="col-lg-8" >       
-               The "One Image For Day" website doesn't have profit mission, but it is born for promoting the sharing of these images that can be used 
+
+            <div class="col-xs-12" >       
+                The "One Imge For Day" website doesn't have profit mission, but it is born for promoting the sharing of these images that can be used 
                 to develop websites, to share them on social network or for saving on your personal computer.
                 <br><br>
-                All images are without copyright royalty, so you can use them for your personal interest.
+                All images are without copiright royalty, so you can use them for your personal interest.
                 <br><br>
-                You can write me at <i>simone.casamassa@gmail.com</i> for tips, advice or questions.       
+                You can write me at <i>simone.casamassa@gmail.com</i> for tips, advice or questions.            
             </div>
-            <div class="col-lg-2" >
-                
-            </div>
+
        </div>
 
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12" style="color:#FFFFFF;">
+                <div class="col-xs-12" style="color:#FFFFFF; margin-top:5%">
                     <p>Developed by Simone Casamassa</p>
                 </div>
             </div>
@@ -303,22 +289,24 @@
         console.log("size"+children);
         var pathImage = children.style.backgroundImage;
         
-        pathImage = pathImage.substring(5);
-        var urlLenght = pathImage.length;
-        console.log("size"+urlLenght);
-        pathImage = pathImage.substring(0,urlLenght-2);
-        console.log("immagine: "+pathImage);
+        pathImage = pathImage.replace('url(','');
+        pathImage = pathImage.replace(')','');
+        pathImage = pathImage.replace('"','');
+        pathImage = pathImage.replace('"','');
 
         var link = document.createElement('a');
         link.download = pathImage;
         link.href = pathImage;
         link.click();
     }
+       
+       
        $(window).on('load', function() {
        $("#cover").hide();
 
-        
         $('.carousel').carousel(0);
+        
+        
     });
     
     
@@ -336,8 +324,7 @@
         }
       });
     });
-    
-    
+      
    
     </script>
     <script>

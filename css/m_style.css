@@ -121,3 +121,7 @@ marquee {
    margin-left:25%;
    margin-right:25%;
 }
+
+.image_carousel {
+	width: inherit;
+}

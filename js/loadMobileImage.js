@@ -1,24 +1,4 @@
-/*
-function checkUrl(id, urlInput){	
-console.log("url :"+urlInput);
-var returnValue;
-return $.ajax({
-  type: "GET",
-  url: urlInput,
-  success: function(msg){
-  		console.log("url ok");
-  		document.getElementById(id).style.backgroundImage="url('"+urlInput+"')";
-    
-  },
-  error: function(XMLHttpRequest, textStatus, errorThrown) {
-  		console.log("url ko");
-		document.getElementById(id).style.backgroundImage="url('image/defaultImage.jpg')";
-  }
-  
-});
-	
-	return returnValue;
-} */
+
 
 
 function loadImage(){
@@ -61,11 +41,11 @@ var images = [
 "https://www.goodfreephotos.com/albums/united-states/wyoming/yellowstone-national-park/winter-landscape-scene-yellowstone-national-park-wyoming.jpg",
 "https://www.goodfreephotos.com/albums/united-states/oregon/other-oregon/giant-beach-coming-out-of-the-sea-cannon-beach-oregon.jpg",
 "https://static.pexels.com/photos/6618/pexels-photo.jpg",
-"https://upload.wikimedia.org/wikipedia/commons/a/a5/Andromeda_galaxy_Ssc2005-20a1.jpg",
+"http://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg",
 "https://upload.wikimedia.org/wikipedia/commons/4/41/European_Alps.jpg",
 "https://upload.wikimedia.org/wikipedia/commons/6/6b/Endeavour_silhouette_STS-130.jpg",
 "https://c1.staticflickr.com/9/8288/7603753276_805828026e_b.jpg",
-"http://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg",
+"https://upload.wikimedia.org/wikipedia/commons/a/a3/Crostone_sull'altopiano_-_Parco_Nazionale_del_Gran_Sasso.jpg",
 "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/San_Pietro_e_Ponte_SAngelo_(notte).jpg/1280px-San_Pietro_e_Ponte_SAngelo_(notte).jpg",
 "https://static.pexels.com/photos/31551/pexels-photo.jpg",
 "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Le_Gan_Chenpo_(Himalaya,_N%C3%A9pal)_(8446635289).jpg/1024px-Le_Gan_Chenpo_(Himalaya,_N%C3%A9pal)_(8446635289).jpg",
@@ -517,80 +497,23 @@ var oneDay = 1000 * 60 * 60 * 24;
 var day = Math.floor(diff / oneDay);
 console.log("giorno dell'anno"+day);
 
-document.getElementById('image-1').style.backgroundImage="url('"+images[day-1]+"')";	
-document.getElementById('day-image-1').textContent = dat[day-1];	
 
-document.getElementById('image-2').style.backgroundImage="url('"+images[day-2]+"')";	
-//document.getElementById('image-bckg-2').src=images[day-2];	
-document.getElementById('day-image-2').textContent = dat[day-2];
+document.getElementById('image_carousel_1').src=images[day-1];	
+//document.getElementById('day-image-1').textContent = dat[day-1];	
 
-document.getElementById('image-3').style.backgroundImage="url('"+images[day-3]+"')";	
-//document.getElementById('image-bckg-3').src=images[day-3];	
-document.getElementById('day-image-3').textContent = dat[day-3];
+document.getElementById('image_carousel_2').src=images[day-2];	
+//document.getElementById('day-image-2').textContent = dat[day-2];
 
-document.getElementById('image-4').style.backgroundImage="url('"+images[day-4]+"')";	
-//document.getElementById('image-bckg-4').src=images[day-4];
-document.getElementById('day-image-4').textContent = dat[day-4];
+document.getElementById('image_carousel_3').src=images[day-3];	
+//document.getElementById('day-image-3').textContent = dat[day-3];
 
-document.getElementById('image-5').style.backgroundImage="url('"+images[day-5]+"')";	
-//document.getElementById('image-bckg-5').src=images[day-5];
-document.getElementById('day-image-5').textContent = dat[day-5];
+document.getElementById('image_carousel_4').src=images[day-4];	
+//document.getElementById('day-image-4').textContent = dat[day-4];
 
-document.getElementById('image-6').style.backgroundImage="url('"+images[day-6]+"')";	
-//document.getElementById('image-bckg-6').src=images[day-6];
-document.getElementById('day-image-6').textContent = dat[day-6];
+document.getElementById('image_carousel_5').src=images[day-5];	
+//document.getElementById('day-image-5').textContent = dat[day-5];
 
-document.getElementById('image-7').style.backgroundImage="url('"+images[day-7]+"')";	
-//document.getElementById('image-bckg-7').src=images[day-7];
-document.getElementById('day-image-7').textContent = dat[day-7];
 
-document.getElementById('image-8').style.backgroundImage="url('"+images[day-8]+"')";	
-//document.getElementById('image-bckg-8').src=images[day-8];
-document.getElementById('day-image-8').textContent = dat[day-8];
 
-document.getElementById('image-9').style.backgroundImage="url('"+images[day-9]+"')";	
-//document.getElementById('image-bckg-9').src=images[day-9];
-document.getElementById('day-image-9').textContent = dat[day-9];
-
-document.getElementById('image-10').style.backgroundImage="url('"+images[day-10]+"')";	
-//document.getElementById('image-bckg-10').src=images[day-10];
-document.getElementById('day-image-10').textContent = dat[day-10];
-
-document.getElementById('image-11').style.backgroundImage="url('"+images[day-11]+"')";	
-//document.getElementById('image-bckg-11').src=images[day-11];
-document.getElementById('day-image-11').textContent = dat[day-11];
-
-document.getElementById('image-12').style.backgroundImage="url('"+images[day-12]+"')";	
-//document.getElementById('image-bckg-12').src=images[day-12];
-document.getElementById('day-image-12').textContent = dat[day-12];
-
-document.getElementById('image-13').style.backgroundImage="url('"+images[day-13]+"')";	
-//document.getElementById('image-bckg-13').src=images[day-13];
-document.getElementById('day-image-13').textContent = dat[day-13];
-
-document.getElementById('image-14').style.backgroundImage="url('"+images[day-14]+"')";	
-//document.getElementById('image-bckg-14').src=images[day-14];
-document.getElementById('day-image-14').textContent = dat[day-14];
-
-document.getElementById('image-15').style.backgroundImage="url('"+images[day-15]+"')";	
-//document.getElementById('image-bckg-15').src=images[day-15];
-document.getElementById('day-image-15').textContent = dat[day-15];
-
-$.get(images[day-1],function(){});
-$.get(images[day-2],function(){});
-$.get(images[day-3],function(){});
-$.get(images[day-4],function(){});
-$.get(images[day-5],function(){});
-$.get(images[day-6],function(){});
-$.get(images[day-7],function(){});
-$.get(images[day-8],function(){});
-$.get(images[day-9],function(){});
-$.get(images[day-10],function(){});
-$.get(images[day-11],function(){});
-$.get(images[day-12],function(){});
-$.get(images[day-13],function(){});
-$.get(images[day-14],function(){});
-$.get(images[day-15],function(){});
 }
 
-loadImage();
